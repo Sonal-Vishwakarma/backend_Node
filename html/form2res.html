@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submitted</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#141e30,#243b55);
+        }
+
+        .card{
+            width:450px;
+            padding:40px;
+            border-radius:25px;
+            background:rgba(255,255,255,0.1);
+            backdrop-filter:blur(15px);
+            text-align:center;
+            color:white;
+            box-shadow:0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        h1{
+            margin-bottom:20px;
+            color:#00ffcc;
+        }
+
+        .info{
+            background:rgba(255,255,255,0.15);
+            padding:15px;
+            border-radius:15px;
+            text-align:left;
+        }
+
+        .info p{
+            margin:10px 0;
+            font-size:18px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:25px;
+            padding:12px 25px;
+            border-radius:12px;
+            text-decoration:none;
+            background:#00ffcc;
+            color:black;
+            font-weight:bold;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="card">
+
+        <h1>🎉 Form Submitted Successfully!</h1>
+
+        <div class="info">
+
+            <p><strong>👤 Name:</strong> {name}</p>
+
+            <p><strong>📧 Email:</strong> {email}</p>
+
+            <p><strong>📱 Phone:</strong> {phone}</p>
+
+            <p><strong>🏙️ City:</strong> {city}</p>
+
+            <p><strong>💬 Message:</strong> {message}</p>
+
+        </div>
+
+        <a href="/" class="btn">Go Back</a>
+
+    </div>
+
+</body>
+</html>
